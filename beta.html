@@ -48,7 +48,8 @@
   }
   .wrap { position: relative; z-index: 1; max-width: 580px; margin: 0 auto; padding: 0 20px 56px; }
   header { padding: 22px 0 8px; display: flex; align-items: center; justify-content: space-between; }
-  .brand { font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  .brand svg { width: 27px; height: 29px; flex: none; }
   .brand span { color: var(--accent); }
   .pill {
     font-size: 12px; font-weight: 600; color: var(--accent);
@@ -156,13 +157,17 @@
   footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--faint); font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 16px; }
   footer a { color: var(--mute); text-decoration: none; }
 </style>
+  <link rel="icon" href="brand/sleepwise-favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="brand/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="brand/apple-touch-icon-180.png" sizes="180x180">
 </head>
 <body>
 <div class="glow" aria-hidden="true"></div>
 <div class="wrap">
 
   <header>
-    <div class="brand">Sleep<span>Wise</span></div>
+    <div class="brand"><svg viewBox="14 12 72 78" aria-hidden="true" focusable="false"><path d="M28 14 C33 20 40 24 50 24 C60 24 67 20 72 14 C78 22 80 32 78 40 C84 48 86 58 84 68 C81 80 68 88 50 88 C32 88 19 80 16 68 C14 58 16 48 22 40 C20 32 22 22 28 14 Z" fill="#968ae0"></path> <circle cx="39" cy="41" r="11.5" fill="#d2cefd"></circle> <circle cx="61" cy="41" r="11.5" fill="#d2cefd"></circle> <path d="M50 52 C60 52 66 60 66 70 C66 80 58 87 50 87 C42 87 34 80 34 70 C34 60 40 52 50 52 Z" fill="#d2cefd"></path> <path d="M21 44 C12 61 21 83 47 88.5 C34 78 30 64 34 51 C29 49 25 47 21 44 Z" fill="#5d5294"></path> <path d="M79 44 C88 61 79 83 53 88.5 C66 78 70 64 66 51 C71 49 75 47 79 44 Z" fill="#5d5294"></path> <path d="M30.5 39.5 Q39 51 47.5 39.5 Q39 45.5 30.5 39.5 Z M52.5 39.5 Q61 51 69.5 39.5 Q61 45.5 52.5 39.5 Z" fill="#423a6a" stroke="#423a6a" stroke-width="1.6" stroke-linejoin="round"></path> <path d="M47.5 47 Q50 45.5 52.5 47 Q51.6 52 50 54.5 Q48.4 52 47.5 47 Z" fill="#5d5294"></path></svg>Sleep<span>Wise</span></div>
     <div class="pill">Beta</div>
   </header>
 
